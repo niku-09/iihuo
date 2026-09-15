@@ -1,20 +1,22 @@
-=== fix_all_v1 ===
+=== fix_all_v2 ===
 RUN_MODE = 0
 actions  = C:\Users\nikhil.mohan\Desktop\Analysis testing\audit\FIX_ACTIONS_FULL.csv
 
 actions loaded
-  DELETE  : 0
-  TRIA    : 0
-  REORDER : 0
+  DELETE  : 2705
+  TRIA    : 518
+  REORDER : 37
 
 --- Stage 1: delete ---
-  nothing to delete
+  present in model : 2705
+  already absent   : 0
+  [report only] nothing deleted
 
 --- Stage 2: convert collapsed quads to CTRIA3 ---
-  nothing to convert
+  [report only] would convert 518 elements
 
 --- Stage 3: reorder crossed quads ---
-  nothing to reorder
+  [report only] would reorder 37 elements
 
 --- next steps ---
   1. Save a backup of the model
