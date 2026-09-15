@@ -1,0 +1,1785 @@
+1
+ 
+ 
+ 
+ 
+                                                             
+                       Copyright 2022 Siemens                
+                         All Rights Reserved.                
+                                                             
+               This software and related documentation are   
+                    proprietary to Siemens Industry          
+                             Software Inc.                   
+                                                             
+              Siemens and the Siemens logo are registered    
+           trademarks of Siemens AG. Simcenter is a trademark
+                   or registered trademark of Siemens        
+                     Industry Software Inc. or its           
+             subsidiaries in the United States and in other  
+             countries.  NASTRAN is a registered trademark   
+                 of the National Aeronautics and Space       
+                 Administration.  All other trademarks,      
+              registered trademarks or service marks belong  
+                      to their respective holders.           
+                                                             
+           LIMITATIONS TO U.S. GOVERNMENT RIGHTS. UNPUBLISHED
+           - RIGHTS RESERVED UNDER THE COPYRIGHT LAWS OF THE 
+            UNITED STATES. This computer software and related
+               computer software documentation have been     
+            developed exclusively at private expense and are 
+           provided subject to the following rights:  If this
+               computer software and computer  software      
+            documentation qualify as "commercial items" (as  
+             that term is defined in FAR 2.101), their use,  
+            duplication or disclosure by the U.S. Government 
+           is subject to the protections and restrictions as 
+            set forth in the Siemens commercial license for  
+            software and/or documentation, as prescribed in  
+           FAR 12.212 and FAR 27.405(b)(2)(i) (for civilian  
+             agencies) and in DFARS 227.7202-1(a) and DFARS  
+           227.7202-3(a) (for the Department of Defense), or 
+           any successor or similar regulation, as applicable
+           or as amended from time to time.  If this computer
+           software and computer documentation do not qualify
+            as "commercial items", then they are "restricted 
+           computer software" and are provided with "restric-
+            tive rights", and their use, duplication or dis- 
+            closure by the U.S. Government is subject to the 
+            protections and restrictions as set forth in FAR 
+           27.404(b) and FAR 52-227-14 (for civilian agencies
+           ), and DFARS 227.7203-5(c) and DFARS 252.227-7014 
+           (for the Department of Defense), or any successor 
+           or similar regulation, as applicable or as amended
+           from time to time. Siemens Industry Software Inc. 
+           5800 Granite Parkway, Suite 600, Plano, TX 75024  
+ 
+
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *     Simcenter Nastran 2022.1    * *
+                * *                                 * *
+                * *       VERSION - 2019.0030       * *
+                * *                                 * *
+                * *          FEB  8, 2022           * *
+                * *                                 * *
+                * *                                 * *
+                * *Intel64 Family 6 Model 85 Steppi * *
+                * *                                 * *
+                * *MODEL Intel(R) Xeon(R) W-2145 CP * *
+                * *                                 * *
+                * *           Windows 10            * *
+                * *                                 * *
+                * *       Compiled for X86-64       * *
+                * *                                 * *
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+1 
+  
+                      Welcome to Simcenter Nastran
+                      ----------------------------
+  
+  
+ This "news" information can be turned off by setting "news=no" in the runtime
+ configuration (RC) file.  The "news" keyword can be set in the system RC file
+ for global, or multi-user control, and in a local file for local control.
+ Individual jobs can be controlled by setting news to yes or no on the command
+ line.
+1                                                                         SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     NASTRAN BUFFSIZE=32769 $(C:/PROGRAM FILES/SIEMENS/FEMAP 2022.2/NASTRAN/CONF/NAST
+     NASTRAN BUFFPOOL=23435                                                          
+     NASTRAN DIAGA=128 DIAGB=0 $(C:/PROGRAM FILES/SIEMENS/FEMAP 2022.2/NASTRAN/CONF/N
+     NASTRAN REAL=8533835776 $(MEMORY LIMIT FOR MPI AND OTHER SPECIALIZED MODULES)   
+     INIT MASTER(S)                                                                  
+     NASTRAN SYSTEM(442)=-1,SYSTEM(319)=1                                            
+1                                                                         SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ID MAYBE,FEMAP                                                                          
+     SOL SESTATIC                                                                            
+     CEND                                                                                    
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1        TITLE = TEST                                                                          
+                  2        ECHO = NONE                                                                           
+                  3        DISPLACEMENT(PLOT) = ALL                                                              
+                  4        SPCFORCE(PLOT) = ALL                                                                  
+                  5        OLOAD(PLOT) = ALL                                                                     
+                  6        FORCE(PLOT,CORNER) = ALL                                                              
+                  7        STRESS(PLOT,CORNER) = ALL                                                             
+                  8        SPC = 1                                                                               
+                  9        LOAD = 14                                                                             
+                 10      BEGIN BULK                                                                              
+0                             INPUT BULK DATA ENTRY COUNT =     1227655
+0                       TOTAL COUNT=   1227587
+
+
+                                        M O D E L   S U M M A R Y
+
+                                   NUMBER OF GRID     POINTS   =   617426
+ 
+ 
+                                   NUMBER OF CBEAM    ELEMENTS =       15
+                                   NUMBER OF CQUAD4   ELEMENTS =   598353
+                                   NUMBER OF CTRIA3   ELEMENTS =     7430
+ 
+                                   NUMBER OF RBE2     ELEMENTS =       33
+ *** USER INFORMATION MESSAGE 4109 (OUTPBN2)
+     THE LABEL IS NX2022.1 FOR FORTRAN UNIT 12
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =        7 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =        8 RECORDS.)
+     (TOTAL DATA WRITTEN FOR TAPE LABEL =       17 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK PVT0     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                27                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       27 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       53 WORDS.)
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK CASECC   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1                 0              1200                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     1200 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     1226 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK EQEXINS  WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101            617426                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       96 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =  2469734 WORDS.)
+ *** USER INFORMATION MESSAGE 7555 (GMTSTS)
+     FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.
+     USER ACTION: USE THE GEOMCHECK (EXECUTIVE CONTROL STATEMENT) KEYWORD=VALUE TO CHANGE TOLERANCE VALUES IF DESIRED.
+     User information:
+       Element Geometry test tolerance levels and message limits can be changed by the GEOMCHECK Executive Control statement.
+       The following keywords are available:
+         Q4_SKEW  - to modify the CQUAD4/CQUADR skew angle test tolerance.
+         Q4_TAPER - to modify the CQUAD4/CQUADR taper ratio test tolerance.
+         Q4_WARP  - to modify the CQUAD4/CQUADR warping coefficient test tolerance.
+         Q4_IAMAX - to modify the CQUAD4/CQUADR maximum interior angle test tolerance.
+         Q4_IAMIN - to modify the CQUAD4/CQUADR minimum interior angle test tolerance.
+         T3_SKEW  - to modify the CTRIA3/CTRIAR skew angle test tolerance.
+         T3_IAMAX - to modify the CTRIA3/CTRIAR maximum interior angle test tolerance.
+         TET_AR   - to modify the CTETRA aspect ratio test tolerance.
+         TET_EPLR - to modify the CTETRA edge node point length ratio test tolerance.
+         TET_DETJ - to modify the CTETRA determinant of the Jacobian matrix test tolerance.
+         TET_DETG - to modify the CTETRA determinant of the vertex points Jacobian matrix test tolerance.
+         HEX_AR   - to modify the CHEXA aspect ratio test tolerance.
+         HEX_EPLR - to modify the CHEXA edge node point length ratio test tolerance.
+         HEX_DETJ - to modify the CHEXA determinant of the Jacobian matrix test tolerance.
+         HEX_WARP - to modify the CHEXA face warping coefficient test tolerance.
+         BEAM_OFF - to modify the CBEAM  offset length ratio test tolerance.
+         BAR_OFF  - to modify the CBAR   offset length ratio test tolerance.
+         MSGLIMIT - to limit the number of messages that are generated.
+         MSGTYPE  - to modify the severity level of the test.
+     A MAXIMUM OF        100 SKEW ANGLE (SA)      TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 MIN INT. ANGLE (IA)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 MAX INT. ANGLE (IA)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 WARPING FACTOR (WF)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 TAPER RATIO (TR)     TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 ASPECT RATIO (AR)    TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4        6681        80.79             65.53            122.51              0.00              0.92 xxxx        40.52     
+    QUAD4        8425        52.83             34.48            157.59 xxxx         0.00              0.60 xxxx         2.11     
+    QUAD4        8429        72.09             63.28            141.76              0.00              0.54 xxxx         1.80     
+    QUAD4        8551         6.15 xxxx         3.19 xxxx       133.45              0.00              0.96 xxxx        57.16     
+    QUAD4        8552        65.53             46.55            178.45 xxxx         0.00              0.98 xxxx         2.52     
+    QUAD4        8553        65.85             46.64            178.36 xxxx         0.00              0.98 xxxx         2.58     
+    QUAD4        9716        83.49             77.14            102.86              0.00              0.54 xxxx        10.50     
+    QUAD4        9934        63.16             53.63            146.41              0.00              0.50 xxxx         1.62     
+    QUAD4       10403        66.58             39.46            143.73              0.04              0.79 xxxx         3.14     
+    QUAD4       10408        83.85             63.04            121.26              0.07 xxxx         0.40              1.77     
+    QUAD4       10424        64.46             48.68            142.25              0.01              0.51 xxxx         2.22     
+    QUAD4       10425        39.59             25.52 xxxx       160.34 xxxx         0.00              0.54 xxxx         2.63     
+    QUAD4       11234        53.24             41.67            162.97 xxxx         0.05              0.84 xxxx         1.49     
+    QUAD4       11235        53.34             41.82            162.97 xxxx         0.05              0.84 xxxx         1.49     
+    QUAD4       11238        81.79             50.29            159.58 xxxx         0.00              0.84 xxxx         2.35     
+    QUAD4       11239        32.67             19.65 xxxx       122.97              0.01              0.79 xxxx         9.20     
+    QUAD4       11240        48.90             40.39            156.74 xxxx         0.02              0.56 xxxx         1.55     
+    QUAD4       11263        48.77             40.23            156.88 xxxx         0.02              0.56 xxxx         1.54     
+    QUAD4       11264        81.65             50.17            159.60 xxxx         0.00              0.84 xxxx         2.36     
+    QUAD4       11265        32.67             19.65 xxxx       122.95              0.01              0.79 xxxx         9.18     
+    QUAD4       11267        53.42             41.76            162.92 xxxx         0.05              0.84 xxxx         1.49     
+    QUAD4       11268        53.53             41.91            162.92 xxxx         0.05              0.84 xxxx         1.49     
+    QUAD4       11327        83.74             64.41            136.64              0.00              0.59 xxxx         2.36     
+    QUAD4       11328        84.65             67.35            135.00              0.00              0.58 xxxx         2.32     
+    QUAD4       11344        83.74             64.41            136.64              0.00              0.59 xxxx         2.36     
+    QUAD4       11346        84.65             67.35            135.00              0.00              0.58 xxxx         2.32     
+    QUAD4       11608        77.58             61.18            140.08              0.00              0.53 xxxx         1.80     
+    QUAD4       11838        57.97             44.88            120.65              0.00              0.99 xxxx       305.23 xxxx
+    QUAD4       11840        77.96             61.60            139.62              0.00              0.53 xxxx         1.81     
+    QUAD4       11888        59.18             42.63            161.78 xxxx         0.00              0.72 xxxx         1.85     
+    QUAD4       11913        75.77             37.86            137.87              0.03              0.91 xxxx        14.09     
+    QUAD4       12002        80.09             64.52            123.30              0.00              0.92 xxxx        40.87     
+    QUAD4       12953        70.03             35.05            177.89 xxxx         0.00              1.00 xxxx       586.16 xxxx
+    QUAD4       12954        74.78             52.37            117.61              0.00              0.55 xxxx         2.28     
+    QUAD4       14263        89.20             60.80            131.83              0.00              0.50 xxxx         2.07     
+    QUAD4       14342        30.35             18.10 xxxx       126.69              0.00              0.83 xxxx        12.25     
+    QUAD4       14343        72.15             53.39            171.73 xxxx         0.00              0.91 xxxx         2.53     
+    QUAD4       14344        89.65             56.54            170.17 xxxx         0.00              0.92 xxxx         3.50     
+    QUAD4       14346        44.12             34.15            125.74              0.01              0.93 xxxx        55.24     
+    QUAD4       14505        78.19             62.04            138.61              0.00              0.52 xxxx         1.78     
+    QUAD4       14615        78.04             62.35            139.29              0.00              0.53 xxxx         1.77     
+    QUAD4       14757        77.09             66.09            113.11              0.00              0.85 xxxx        28.46     
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4       14807        59.12             39.90            140.10              0.00              0.75 xxxx         7.64     
+    QUAD4       15028        85.26             68.05            132.47              0.00              0.57 xxxx         2.42     
+    QUAD4       15036        85.27             68.07            132.45              0.00              0.57 xxxx         2.42     
+    QUAD4       15045        85.25             68.05            132.50              0.00              0.57 xxxx         2.42     
+    QUAD4       15053        85.26             68.06            132.48              0.00              0.57 xxxx         2.42     
+    QUAD4       15061        85.26             68.05            132.48              0.00              0.57 xxxx         2.42     
+    QUAD4       15069        85.26             68.06            132.47              0.00              0.57 xxxx         2.42     
+    QUAD4       15077        85.27             68.07            132.48              0.00              0.57 xxxx         2.42     
+    QUAD4       15078        85.79             42.90            178.26 xxxx         0.00              1.00 xxxx       544.72 xxxx
+    QUAD4       15086        85.27             68.07            132.47              0.00              0.57 xxxx         2.42     
+    QUAD4       15095        85.27             68.07            132.47              0.00              0.57 xxxx         2.42     
+    QUAD4       15104        85.27             68.07            132.47              0.00              0.57 xxxx         2.42     
+    QUAD4       15113        85.24             68.02            132.48              0.00              0.57 xxxx         2.42     
+    QUAD4       15114        85.90             42.95            135.02              0.00              0.99 xxxx       375.45 xxxx
+    QUAD4       15122        85.23             68.03            132.47              0.00              0.57 xxxx         2.42     
+    QUAD4       16459        84.63             60.77            124.97              0.00              0.52 xxxx         1.95     
+    QUAD4       17169        76.76             54.73            117.43              0.00              0.50 xxxx         2.36     
+    QUAD4       17175        82.28             70.80            142.48              0.00              0.61 xxxx         1.80     
+    QUAD4       18294        82.47             58.74            121.94              0.00              0.50 xxxx         2.00     
+    QUAD4       18513        81.89             69.17            139.77              0.00              0.58 xxxx         1.85     
+    QUAD4       18818        82.19             59.03            122.67              0.00              0.51 xxxx         2.25     
+    QUAD4       19745        35.11             25.02 xxxx       131.30              0.00              0.89 xxxx        36.50     
+    QUAD4       19748        89.35             48.60            138.93              0.00              0.57 xxxx         2.79     
+    QUAD4       19749        74.83             51.86            120.26              0.00              0.56 xxxx         2.12     
+    QUAD4       20309        64.47             49.98            117.15              0.00              0.91 xxxx        38.63     
+    QUAD4       20731        80.05             68.70            150.67 xxxx         0.00              0.69 xxxx         2.11     
+    QUAD4       21699        76.72             54.72            117.30              0.00              0.50 xxxx         2.36     
+    QUAD4       21705        82.31             70.77            142.49              0.00              0.61 xxxx         1.80     
+    QUAD4       22168        87.11             58.65            137.98              0.00              0.64 xxxx         2.37     
+    QUAD4       22169        87.65             64.79            126.54              0.00              0.52 xxxx         2.02     
+    QUAD4       22176        88.60             67.37            130.76              0.00              0.56 xxxx         2.17     
+    QUAD4       22495        79.95             69.30            146.17              0.00              0.64 xxxx         1.94     
+    QUAD4       22496        77.57             53.43            130.33              0.00              0.51 xxxx         2.78     
+    QUAD4       22719        85.86             61.73            124.94              0.00              0.51 xxxx         2.01     
+    QUAD4       23028        56.82             46.65            113.55              0.00              0.94 xxxx        83.52     
+    QUAD4       23042        56.82             46.65            113.55              0.00              0.94 xxxx        83.52     
+    QUAD4       24517        83.73             70.38            118.35              0.00              0.91 xxxx        37.72     
+    QUAD4       25943        31.79             16.86 xxxx       166.86 xxxx         0.00              1.00 xxxx       174.80 xxxx
+    QUAD4       26420        90.00             90.00             90.00              0.00              0.00            124.61 xxxx
+    QUAD4       26421        90.00             90.00             90.00              0.00              0.00            124.61 xxxx
+    QUAD4       26422        90.00             90.00             90.00              0.00              0.00            124.61 xxxx
+    QUAD4       26423        90.00             90.00             90.00              0.00              0.00            124.61 xxxx
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4       27974        88.65             44.46            144.61              0.04              0.72 xxxx         3.97     
+    QUAD4       27988        74.61             58.49            115.16              0.06 xxxx         0.31              1.85     
+    QUAD4       28088        39.60             31.50            129.56              0.00              0.97 xxxx       225.38 xxxx
+    QUAD4       28090        74.66             65.14            139.49              0.01              0.52 xxxx         1.82     
+    QUAD4       28814        66.67             39.51            143.79              0.04              0.79 xxxx         3.15     
+    QUAD4       28819        84.00             63.10            121.20              0.07 xxxx         0.40              1.77     
+    QUAD4       28833        72.97             57.24            115.57              0.06 xxxx         0.31              1.85     
+    QUAD4       29370        77.26             54.47            117.89              0.00              0.51 xxxx         2.07     
+    QUAD4       29426        47.82             41.88            166.42 xxxx         0.00              0.75 xxxx         1.97     
+    QUAD4       29427        41.33             11.58 xxxx       167.62 xxxx         0.00              0.37              5.84     
+    QUAD4       30610        35.30             23.48 xxxx       119.84              0.04              0.83 xxxx        17.29     
+    QUAD4       30613        56.56             39.22            129.78              0.03              0.75 xxxx        11.10     
+    QUAD4       30618        70.36             44.96            138.30              0.00              0.75 xxxx         3.83     
+    QUAD4       30619        78.91             34.23            151.04 xxxx         0.00              0.60 xxxx         3.08     
+    QUAD4       30621        63.02             27.19 xxxx       169.79 xxxx         0.00              0.80 xxxx         2.78     
+    QUAD4       30627        82.18             59.77            121.84              0.00              0.51 xxxx         1.83     
+    QUAD4       30712        37.49             24.29 xxxx       161.29 xxxx         0.00              0.62 xxxx         3.02     
+    QUAD4       30716        35.49             28.87 xxxx       154.90 xxxx         0.00              0.28              1.92     
+    QUAD4       30718        63.02             59.19            130.84              0.00              0.72 xxxx        21.46     
+    QUAD4       30730        79.51             56.63            124.17              0.00              0.56 xxxx         2.82     
+    QUAD4       30732        25.41 xxxx        16.12 xxxx       147.85              0.00              0.60 xxxx         5.40     
+    QUAD4       30733        60.10             44.13            163.95 xxxx         0.00              0.75 xxxx         2.10     
+    QUAD4       30735        60.50             45.71            156.13 xxxx         0.00              0.69 xxxx         3.92     
+    QUAD4       30736        52.18             18.53 xxxx       171.71 xxxx         0.00              0.77 xxxx         3.95     
+    QUAD4       30738        40.04             32.16            134.22              0.00              0.91 xxxx        73.91     
+    QUAD4       30742        38.23             26.79 xxxx       144.18              0.00              0.40              3.95     
+    QUAD4       30745        35.33             28.71 xxxx       155.25 xxxx         0.00              0.29              1.92     
+    QUAD4       30747        66.12             59.24            106.99              0.03              0.60 xxxx        16.32     
+    QUAD4       30955        77.15             30.90            152.74 xxxx         0.00              0.99 xxxx       184.08 xxxx
+    QUAD4       30968         3.63 xxxx         3.62 xxxx       176.38 xxxx         0.00              0.00            138.47 xxxx
+    QUAD4       30969         3.62 xxxx         3.62 xxxx       176.38 xxxx         0.00              0.00            137.84 xxxx
+    QUAD4       30970        87.45             86.41             93.62              0.00              0.06            212.83 xxxx
+    QUAD4       31019        89.17             88.09             91.62              0.00              0.10            190.75 xxxx
+    QUAD4       31274        64.32             37.20            154.33 xxxx         0.00              0.58 xxxx         2.41     
+    QUAD4       31284        39.05             27.58 xxxx       155.56 xxxx         0.00              0.39              2.37     
+    QUAD4       31285        28.75 xxxx        18.98 xxxx       150.96 xxxx         0.00              0.66 xxxx        17.79     
+    QUAD4       31289        48.09             33.14            164.16 xxxx         0.00              0.66 xxxx         1.99     
+    QUAD4       31297        39.91             21.37 xxxx       160.91 xxxx         0.00              0.44              4.60     
+    QUAD4       31301        28.48 xxxx        18.70 xxxx       159.69 xxxx         0.00              0.32              4.34     
+    QUAD4       31303        41.71             28.01 xxxx       131.20              0.00              0.52 xxxx         3.12     
+    QUAD4       31312        62.89             36.67            154.32 xxxx         0.00              0.58 xxxx         2.38     
+    QUAD4       31314        36.81             25.40 xxxx       158.70 xxxx         0.00              0.38              2.94     
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4       31315        30.75             19.38 xxxx       161.54 xxxx         0.00              0.34              4.19     
+    QUAD4       31320        37.18             28.26 xxxx       158.23 xxxx         0.00              0.59 xxxx         3.37     
+    QUAD4       31321        38.43             22.30 xxxx       152.24 xxxx         0.00              0.46              5.67     
+    QUAD4       31322        51.32             31.48            151.94 xxxx         0.00              0.37              3.38     
+    QUAD4       31324        30.62             16.36 xxxx       165.18 xxxx         0.00              0.45              5.67     
+    QUAD4       31326        57.68             30.43            150.88 xxxx         0.00              0.34              4.03     
+    QUAD4       31327        43.16             29.47 xxxx       141.56              0.00              0.41              4.03     
+    QUAD4       31341        40.26             18.32 xxxx       164.50 xxxx         0.00              0.50 xxxx         5.07     
+    QUAD4       31343        39.38             27.72 xxxx       153.77 xxxx         0.00              0.30              2.80     
+    QUAD4       31344        32.61             20.78 xxxx       150.43 xxxx         0.00              0.49              5.07     
+    QUAD4       31346        50.65             20.62 xxxx       163.83 xxxx         0.00              0.54 xxxx         4.34     
+    QUAD4       31564        64.32             37.20            154.33 xxxx         0.00              0.58 xxxx         2.41     
+    QUAD4       31574        39.05             27.58 xxxx       155.56 xxxx         0.00              0.39              2.37     
+    QUAD4       31575        28.75 xxxx        18.98 xxxx       150.96 xxxx         0.00              0.66 xxxx        17.79     
+    QUAD4       31579        48.09             33.14            164.16 xxxx         0.00              0.66 xxxx         1.99     
+    QUAD4       31587        39.91             21.37 xxxx       160.91 xxxx         0.00              0.44              4.60     
+    QUAD4       31591        28.48 xxxx        18.70 xxxx       159.69 xxxx         0.00              0.32              4.34     
+    QUAD4       31593        41.71             28.01 xxxx       131.20              0.00              0.52 xxxx         3.12     
+    QUAD4       31602        62.89             36.67            154.32 xxxx         0.00              0.58 xxxx         2.38     
+    QUAD4       31604        36.81             25.40 xxxx       158.70 xxxx         0.00              0.38              2.94     
+    QUAD4       31605        30.75             19.38 xxxx       161.54 xxxx         0.00              0.34              4.19     
+    QUAD4       31610        37.18             28.26 xxxx       158.23 xxxx         0.00              0.59 xxxx         3.37     
+    QUAD4       31611        38.43             22.30 xxxx       152.24 xxxx         0.00              0.46              5.67     
+    QUAD4       31612        51.32             31.48            151.94 xxxx         0.00              0.37              3.38     
+    QUAD4       31614        30.62             16.36 xxxx       165.18 xxxx         0.00              0.45              5.67     
+    QUAD4       31616        57.68             30.43            150.88 xxxx         0.00              0.34              4.03     
+    QUAD4       31617        43.16             29.47 xxxx       141.56              0.00              0.41              4.03     
+    QUAD4       31631        40.26             18.32 xxxx       164.50 xxxx         0.00              0.50 xxxx         5.07     
+    QUAD4       31633        39.38             27.72 xxxx       153.77 xxxx         0.00              0.30              2.80     
+    QUAD4       31634        32.61             20.78 xxxx       150.43 xxxx         0.00              0.49              5.07     
+    QUAD4       31636        50.65             20.62 xxxx       163.83 xxxx         0.00              0.54 xxxx         4.34     
+    QUAD4       31681        52.63             28.12 xxxx       151.13 xxxx         0.00              0.39              3.94     
+    QUAD4       31689        28.98 xxxx        19.16 xxxx       150.51 xxxx         0.00              0.67 xxxx        17.79     
+    QUAD4       31690        37.27             26.70 xxxx       154.84 xxxx         0.00              0.34              2.41     
+    QUAD4       31701        24.41 xxxx        15.67 xxxx       165.73 xxxx         0.00              0.38              4.06     
+    QUAD4       31703        54.23             21.03 xxxx       163.92 xxxx         0.00              0.56 xxxx         4.06     
+    QUAD4       31704        30.06             19.33 xxxx       165.18 xxxx         0.00              0.49              3.25     
+    QUAD4       31706        27.77 xxxx        19.77 xxxx       158.08 xxxx         0.00              0.27              4.10     
+    QUAD4       31713        66.51             41.29            176.49 xxxx         0.00              0.98 xxxx         7.56     
+    QUAD4       31716        50.57             28.69 xxxx       161.31 xxxx         0.00              0.58 xxxx         3.01     
+    QUAD4       31719        54.65             29.58 xxxx       150.83 xxxx         0.00              0.35              3.88     
+    QUAD4       31722        36.43             27.32 xxxx       146.99              0.00              0.43              3.06     
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     9
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4       31723        29.83 xxxx        16.54 xxxx       164.66 xxxx         0.00              0.43              5.45     
+    QUAD4       31725        55.01             32.97            152.19 xxxx         0.00              0.42              3.20     
+    QUAD4       31726        42.20             24.13 xxxx       149.92              0.00              0.47              5.45     
+    QUAD4       31734        52.60             28.80 xxxx       149.29              0.00              0.40              3.98     
+    QUAD4       31735        39.61             24.19 xxxx       147.63              0.00              0.49              5.00     
+    QUAD4       31736        46.67             28.54 xxxx       152.59 xxxx         0.00              0.36              3.46     
+    QUAD4       31737        54.88             30.11            155.47 xxxx         0.00              0.47              3.37     
+    QUAD4       31738        38.96             21.27 xxxx       157.26 xxxx         0.00              0.42              5.00     
+    QUAD4       31746        58.07             33.92            153.49 xxxx         0.00              0.48              2.95     
+    QUAD4       31747        54.79             26.67 xxxx       150.75 xxxx         0.00              0.46              4.01     
+    QUAD4       31748        34.09             21.57 xxxx       149.19              0.00              0.50              5.50     
+    QUAD4       31749        39.57             26.75 xxxx       156.06 xxxx         0.00              0.36              3.01     
+    QUAD4       31751        36.50             17.15 xxxx       165.29 xxxx         0.00              0.49              5.50     
+    QUAD4       31760        70.19             26.08 xxxx       155.78 xxxx         0.00              0.64 xxxx         3.33     
+    QUAD4       31764        32.80             19.85 xxxx       163.18 xxxx         0.00              0.45              3.94     
+    QUAD4       31765        36.87             23.90 xxxx       160.74 xxxx         0.00              0.45              3.09     
+    QUAD4       31766        35.64             28.90 xxxx       142.29              0.00              0.31              3.22     
+    QUAD4       31990        52.63             28.12 xxxx       151.13 xxxx         0.00              0.39              3.94     
+    QUAD4       31998        28.98 xxxx        19.16 xxxx       150.51 xxxx         0.00              0.67 xxxx        17.79     
+    QUAD4       31999        37.27             26.70 xxxx       154.84 xxxx         0.00              0.34              2.41     
+    QUAD4       32010        24.41 xxxx        15.67 xxxx       165.73 xxxx         0.00              0.38              4.06     
+    QUAD4       32012        54.23             21.03 xxxx       163.92 xxxx         0.00              0.56 xxxx         4.06     
+    QUAD4       32013        30.06             19.33 xxxx       165.18 xxxx         0.00              0.49              3.25     
+    QUAD4       32015        27.77 xxxx        19.77 xxxx       158.08 xxxx         0.00              0.27              4.10     
+    QUAD4       32022        66.51             41.29            176.49 xxxx         0.00              0.98 xxxx         7.56     
+    QUAD4       32025        50.57             28.69 xxxx       161.31 xxxx         0.00              0.58 xxxx         3.01     
+    QUAD4       32028        54.65             29.58 xxxx       150.83 xxxx         0.00              0.35              3.88     
+    QUAD4       32031        36.43             27.32 xxxx       146.99              0.00              0.43              3.06     
+    QUAD4       32032        29.83 xxxx        16.54 xxxx       164.66 xxxx         0.00              0.43              5.45     
+    QUAD4       32035        42.20             24.13 xxxx       149.92              0.00              0.47              5.45     
+    QUAD4       32043        52.60             28.80 xxxx       149.29              0.00              0.40              3.98     
+    QUAD4       32044        39.61             24.19 xxxx       147.63              0.00              0.49              5.00     
+    QUAD4       32045        46.67             28.54 xxxx       152.59 xxxx         0.00              0.36              3.46     
+    QUAD4       32047        38.96             21.27 xxxx       157.26 xxxx         0.00              0.42              5.00     
+    QUAD4       32056        54.79             26.67 xxxx       150.75 xxxx         0.00              0.46              4.01     
+    QUAD4       32057        34.09             21.57 xxxx       149.19              0.00              0.50              5.50     
+    QUAD4       32058        39.57             26.75 xxxx       156.06 xxxx         0.00              0.36              3.01     
+    QUAD4       32060        36.50             17.15 xxxx       165.29 xxxx         0.00              0.49              5.50     
+    QUAD4       32069        70.19             26.08 xxxx       155.78 xxxx         0.00              0.64 xxxx         3.33     
+    QUAD4       32073        32.80             19.85 xxxx       163.18 xxxx         0.00              0.45              3.94     
+    QUAD4       32074        36.87             23.90 xxxx       160.74 xxxx         0.00              0.45              3.09     
+    QUAD4       32075        35.64             28.90 xxxx       142.29              0.00              0.31              3.22     
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    10
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4       35633        31.17             16.12 xxxx       167.21 xxxx         0.00              0.97 xxxx         8.14     
+    QUAD4       41116        45.93             27.10 xxxx       127.74              0.00              0.79 xxxx         5.81     
+    QUAD4       41229        42.90             25.76 xxxx       113.32              0.00              0.75 xxxx         5.53     
+    QUAD4       41231        24.88 xxxx        11.04 xxxx       177.77 xxxx         0.00              0.91 xxxx         5.53     
+    QUAD4       42137        85.83             51.69            161.23 xxxx         0.00              1.00 xxxx       171.00 xxxx
+    QUAD4       42147        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       42148        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       42170        85.83             51.69            161.23 xxxx         0.00              1.00 xxxx       171.00 xxxx
+    QUAD4       42180        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       42181        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       42203        85.83             51.69            161.23 xxxx         0.00              1.00 xxxx       171.00 xxxx
+    QUAD4       42213        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       42214        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       42290        85.56             51.78            160.65 xxxx         0.00              1.00 xxxx       170.20 xxxx
+    QUAD4       42300        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       42301        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       42321        85.56             51.78            160.65 xxxx         0.00              1.00 xxxx       170.20 xxxx
+    QUAD4       42331        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       42332        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       42352        85.56             51.78            160.65 xxxx         0.00              1.00 xxxx       170.20 xxxx
+    QUAD4       42362        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       42363        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       42938        85.56             51.78            160.65 xxxx         0.00              1.00 xxxx       170.20 xxxx
+    QUAD4       42948        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       42949        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       42984        85.83             51.69            161.23 xxxx         0.00              1.00 xxxx       171.00 xxxx
+    QUAD4       42994        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       42995        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       43601        85.56             51.78            160.65 xxxx         0.00              1.00 xxxx       170.20 xxxx
+    QUAD4       43611        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       43612        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       43629        85.83             51.69            161.23 xxxx         0.00              1.00 xxxx       171.00 xxxx
+    QUAD4       43639        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       43640        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       43665        85.56             51.78            160.65 xxxx         0.00              1.00 xxxx       170.20 xxxx
+    QUAD4       43675        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       43676        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       43713        86.00             51.83            161.17 xxxx         0.00              1.00 xxxx       170.61 xxxx
+    QUAD4       43723        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
+    QUAD4       43724        90.00             90.00             90.00              0.00              0.00            161.08 xxxx
+    QUAD4       44316        72.16             52.26            125.43              0.06 xxxx         0.63 xxxx         3.98     
+    QUAD4       44350        67.19             45.81            110.97              0.06 xxxx         0.50 xxxx         3.51     
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    11
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4       45413        61.68             44.86            132.68              0.00              0.97 xxxx       113.71 xxxx
+    QUAD4       47676        16.25 xxxx         8.28 xxxx       171.70 xxxx         0.00              0.33             13.89     
+    QUAD4       47804        16.25 xxxx         8.28 xxxx       171.72 xxxx         0.00              0.33             13.87     
+    QUAD4       50539        29.25 xxxx        21.65 xxxx       177.57 xxxx         0.00              0.94 xxxx         3.16     
+    QUAD4       56827        84.13             42.19            178.35 xxxx         0.00              1.00 xxxx       671.79 xxxx
+    QUAD4       57302        23.67 xxxx        16.64 xxxx       146.41              0.00              0.92 xxxx        67.23     
+    QUAD4       57439        84.13             42.19            175.93 xxxx         0.00              1.00 xxxx       668.45 xxxx
+    QUAD4       57970         2.82 xxxx         2.62 xxxx       177.38 xxxx         0.00              0.00             53.26     
+    QUAD4       57971         3.33 xxxx         3.05 xxxx       176.95 xxxx         0.00              0.00             63.87     
+    QUAD4       57972         4.07 xxxx         3.66 xxxx       176.34 xxxx         0.00              0.00             79.75     
+    QUAD4       57973         5.22 xxxx         4.57 xxxx       175.43 xxxx         0.00              0.00            106.06 xxxx
+    QUAD4       57974         7.29 xxxx         6.09 xxxx       173.91 xxxx         0.00              0.00            157.99 xxxx
+    QUAD4       57975        12.04 xxxx         9.09 xxxx       170.91 xxxx         0.00              0.00            304.78 xxxx
+    QUAD4       58253        29.26 xxxx        21.65 xxxx       177.53 xxxx         0.00              0.94 xxxx         3.16     
+    QUAD4       60342        21.37 xxxx        12.79 xxxx       127.25              0.00              0.98 xxxx       156.74 xxxx
+    QUAD4       61028         3.70 xxxx         1.85 xxxx       178.15 xxxx         0.00              0.84 xxxx        33.79     
+    QUAD4       61029        28.98 xxxx        25.28 xxxx       154.83 xxxx         0.00              0.04             16.19     
+    QUAD4       61034         3.70 xxxx         1.85 xxxx       178.15 xxxx         0.00              0.84 xxxx        33.79     
+    QUAD4       61035        28.97 xxxx        25.27 xxxx       154.84 xxxx         0.00              0.04             16.17     
+    QUAD4       63608        27.89 xxxx        20.25 xxxx       158.14 xxxx         0.00              0.25              3.50     
+    QUAD4       63704        27.89 xxxx        20.24 xxxx       158.14 xxxx         0.00              0.25              3.50     
+    QUAD4       63760        29.13 xxxx        17.13 xxxx       172.64 xxxx         0.00              0.72 xxxx         3.32     
+    QUAD4       63878        29.14 xxxx        17.14 xxxx       172.63 xxxx         0.00              0.72 xxxx         3.32     
+    QUAD4       66696        64.45             64.45            115.55              0.00              0.00            339.84 xxxx
+    QUAD4       70697        86.30             43.15            176.96 xxxx         0.00              1.00 xxxx       470.80 xxxx
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =     70697
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+    QUAD4       70705        86.30             43.15            176.96 xxxx         0.00              1.00 xxxx       470.80 xxxx
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =     70705
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+    QUAD4       71886        26.25 xxxx        20.42 xxxx       177.61 xxxx         0.00              0.93 xxxx         2.79     
+    QUAD4       72079        81.13             40.57            176.96 xxxx         0.00              1.00 xxxx       477.85 xxxx
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =     72079
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+    QUAD4       72121        81.13             40.57            176.96 xxxx         0.00              1.00 xxxx       477.85 xxxx
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =     72121
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+    QUAD4       74748        20.56 xxxx        10.62 xxxx       169.38 xxxx         0.00              0.02            125.00 xxxx
+    QUAD4       74749         6.98 xxxx         5.19 xxxx       174.81 xxxx         0.00              0.02             23.04     
+    QUAD4       74750        10.30 xxxx         5.19 xxxx       174.81 xxxx         0.00              0.04            136.00 xxxx
+    QUAD4       74751        90.00             90.00             90.00              0.00              0.00            125.00 xxxx
+    QUAD4       74774        20.56 xxxx        10.62 xxxx       169.38 xxxx         0.00              0.02            125.00 xxxx
+    QUAD4       74775         6.98 xxxx         5.19 xxxx       174.81 xxxx         0.00              0.02             23.04     
+    QUAD4       74776        10.30 xxxx         5.19 xxxx       174.81 xxxx         0.00              0.04            136.00 xxxx
+    QUAD4       74777        90.00             90.00             90.00              0.00              0.00            125.00 xxxx
+    QUAD4       87209        84.56             75.43            108.67              0.00              0.97 xxxx       193.16 xxxx
+    QUAD4       87548        86.37             77.17            108.77              0.00              0.97 xxxx       191.16 xxxx
+    QUAD4       94314        12.64 xxxx         6.43 xxxx       173.49 xxxx         0.00              0.35             17.35     
+    QUAD4       94315        25.92 xxxx        19.44 xxxx       173.57 xxxx         0.00              0.76 xxxx         2.02     
+    QUAD4       94339        25.92 xxxx        19.44 xxxx       173.57 xxxx         0.00              0.76 xxxx         2.02     
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    12
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4       94340        12.64 xxxx         6.43 xxxx       173.49 xxxx         0.00              0.35             17.35     
+    QUAD4       94794        70.50             54.56            124.56              0.00              0.97 xxxx       107.53 xxxx
+    QUAD4       94798        43.79             30.99            113.27              0.00              0.99 xxxx       343.04 xxxx
+    QUAD4       95608        20.61 xxxx        10.65 xxxx       169.35 xxxx         0.00              0.06             45.62     
+    QUAD4       95610        23.66 xxxx        10.65 xxxx       168.39 xxxx         0.00              0.50             20.13     
+    QUAD4       95611         4.00 xxxx         2.37 xxxx       177.63 xxxx         0.00              0.12             20.13     
+    QUAD4       95612         1.97 xxxx         1.68 xxxx       178.32 xxxx         0.00              0.06              3.40     
+    QUAD4       95613         2.35 xxxx         2.33 xxxx       177.67 xxxx         0.00              0.00              3.74     
+    QUAD4       95614         2.60 xxxx         2.37 xxxx       177.63 xxxx         0.00              0.03              4.13     
+    QUAD4       95615         2.37 xxxx         2.33 xxxx       177.67 xxxx         0.00              0.00              4.11     
+    QUAD4       95616         3.12 xxxx         2.88 xxxx       177.12 xxxx         0.00              0.02              4.85     
+    QUAD4       95617         2.56 xxxx         2.42 xxxx       177.58 xxxx         0.00              0.01              4.70     
+    QUAD4       95618         3.67 xxxx         3.39 xxxx       176.61 xxxx         0.00              0.02              5.72     
+    QUAD4       95619         2.94 xxxx         2.72 xxxx       177.28 xxxx         0.00              0.02              5.55     
+    QUAD4       95620         4.38 xxxx         3.99 xxxx       176.01 xxxx         0.00              0.02              6.94     
+    QUAD4       95621         3.51 xxxx         3.20 xxxx       176.80 xxxx         0.00              0.02              6.74     
+    QUAD4       95622         5.43 xxxx         4.85 xxxx       175.15 xxxx         0.00              0.02              8.82     
+    QUAD4       95623         4.35 xxxx         3.88 xxxx       176.12 xxxx         0.00              0.02              8.56     
+    QUAD4       95624         7.13 xxxx         6.16 xxxx       173.84 xxxx         0.00              0.02             12.07     
+    QUAD4       95625         5.71 xxxx         4.94 xxxx       175.06 xxxx         0.00              0.02             11.74     
+    QUAD4       95626        10.37 xxxx         8.45 xxxx       171.55 xxxx         0.00              0.02             19.03     
+    QUAD4       95627         8.33 xxxx         6.78 xxxx       173.22 xxxx         0.00              0.02             18.62     
+    QUAD4       95628        18.83 xxxx        13.40 xxxx       166.60 xxxx         0.00              0.02             42.23     
+    QUAD4       95629        15.26 xxxx        10.78 xxxx       169.22 xxxx         0.00              0.02             43.07     
+    QUAD4       95632        17.78 xxxx        11.20 xxxx       168.80 xxxx         0.00              0.02             52.99     
+    QUAD4       95634         6.22 xxxx         4.30 xxxx       175.70 xxxx         0.00              0.05             15.95     
+    QUAD4       95636         2.27 xxxx         1.54 xxxx       178.46 xxxx         0.00              0.17              6.15     
+    QUAD4       95637         2.35 xxxx         1.71 xxxx       177.74 xxxx         0.00              0.47              3.80     
+    QUAD4       95638         4.21 xxxx         2.26 xxxx       177.74 xxxx         0.00              0.14             46.39     
+    QUAD4       95639         3.43 xxxx         1.71 xxxx       178.29 xxxx         0.00              0.58 xxxx        45.60     
+    QUAD4       98582         2.66 xxxx         2.55 xxxx       177.45 xxxx         0.00              0.02              2.21     
+    QUAD4       98584         3.07 xxxx         2.69 xxxx       177.31 xxxx         0.00              0.06              2.85     
+    QUAD4       98585         2.91 xxxx         2.78 xxxx       177.22 xxxx         0.00              0.02              2.43     
+    QUAD4       98586         3.22 xxxx         3.06 xxxx       176.94 xxxx         0.00              0.02              2.70     
+    QUAD4       98587         3.60 xxxx         3.40 xxxx       176.60 xxxx         0.00              0.02              3.04     
+    QUAD4       98588         4.30 xxxx         3.59 xxxx       176.41 xxxx         0.00              0.06              4.27     
+    QUAD4       98589         4.08 xxxx         3.82 xxxx       176.18 xxxx         0.00              0.02              3.47     
+    QUAD4       98590         4.70 xxxx         4.37 xxxx       175.63 xxxx         0.00              0.02              4.05     
+    QUAD4       98591         5.56 xxxx         5.09 xxxx       174.91 xxxx         0.00              0.02              4.86     
+    QUAD4       98592         7.14 xxxx         5.37 xxxx       174.63 xxxx         0.00              0.06              8.43     
+    QUAD4       98593         6.78 xxxx         6.11 xxxx       173.89 xxxx         0.00              0.02              6.06     
+    QUAD4       98594         8.71 xxxx         7.63 xxxx       172.37 xxxx         0.00              0.02              8.03     
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    13
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4       98595        12.13 xxxx        10.14 xxxx       169.86 xxxx         0.00              0.02             11.86     
+    QUAD4       98596        20.61 xxxx        10.65 xxxx       169.35 xxxx         0.00              0.06             45.62     
+    QUAD4       98597        19.80 xxxx        15.06 xxxx       164.94 xxxx         0.00              0.02             21.79     
+    QUAD4      100251        86.00             56.97            144.96              0.00              0.99 xxxx       221.67 xxxx
+    QUAD4      100469        90.00             90.00             90.00              0.00              0.00            199.98 xxxx
+    QUAD4      100470        90.00             90.00             90.00              0.00              0.00            199.98 xxxx
+    QUAD4      100471        90.00             90.00             90.00              0.00              0.00            199.98 xxxx
+    QUAD4      100472        90.00             90.00             90.00              0.00              0.00            199.98 xxxx
+    QUAD4      100473        90.00             90.00             90.00              0.00              0.00            199.98 xxxx
+    QUAD4      100474        90.00             90.00             90.00              0.00              0.00            199.98 xxxx
+    QUAD4      100475        90.00             90.00             90.00              0.00              0.00            199.98 xxxx
+    QUAD4      100476        90.00             90.00             90.00              0.00              0.00            199.98 xxxx
+    QUAD4      100477        90.00             90.00             90.00              0.00              0.00            199.98 xxxx
+    QUAD4      116570        15.79 xxxx        11.90 xxxx       168.12 xxxx         0.00              0.04             13.41     
+    QUAD4      116571         9.50 xxxx         7.90 xxxx       172.13 xxxx         0.00              0.04              7.12     
+    QUAD4      116589         4.88 xxxx         2.45 xxxx       177.54 xxxx         0.00              0.35             45.83     
+    QUAD4      116590        22.77 xxxx        15.61 xxxx       177.56 xxxx         0.00              0.89 xxxx         2.04     
+    QUAD4      116594        15.78 xxxx        11.90 xxxx       168.12 xxxx         0.00              0.04             13.42     
+    QUAD4      116595         9.50 xxxx         7.89 xxxx       172.13 xxxx         0.00              0.04              7.12     
+    QUAD4      120337         8.56 xxxx         3.17 xxxx       177.73 xxxx         0.00              0.54 xxxx        33.42     
+    QUAD4      123189        21.78 xxxx        16.04 xxxx       170.94 xxxx         0.00              0.63 xxxx         2.09     
+    QUAD4      123190        13.81 xxxx         9.91 xxxx       170.90 xxxx         0.00              0.41              2.39     
+    QUAD4      123192        31.89             22.71 xxxx       130.51              0.00              0.99 xxxx       322.71 xxxx
+    QUAD4      123194        12.39 xxxx         9.39 xxxx       169.29 xxxx         0.00              0.31              1.98     
+    QUAD4      123995        24.57 xxxx        17.61 xxxx       141.92              0.00              0.98 xxxx       318.58 xxxx
+    QUAD4      126973        34.51             19.22 xxxx       160.78 xxxx         0.00              0.01            134.31 xxxx
+    QUAD4      127065        50.25             49.01            130.99              0.00              0.00            103.98 xxxx
+    QUAD4      127067        52.96             51.58            128.42              0.00              0.00            107.88 xxxx
+    QUAD4      127068        55.92             54.38            125.62              0.00              0.00            111.96 xxxx
+    QUAD4      127069        59.19             57.53            122.47              0.00              0.00            115.97 xxxx
+    QUAD4      127070        62.68             60.91            119.09              0.00              0.00            119.81 xxxx
+    QUAD4      127071        66.34             64.52            115.48              0.00              0.00            123.23 xxxx
+    QUAD4      127072        70.29             68.21            111.79              0.00              0.00            126.53 xxxx
+    QUAD4      127073        74.54             72.43            107.57              0.00              0.00            129.15 xxxx
+    QUAD4      127074        78.88             76.69            103.31              0.00              0.00            131.11 xxxx
+    QUAD4      127075        83.35             81.10             98.90              0.00              0.00            132.32 xxxx
+    QUAD4      127076        87.81             85.62             94.38              0.00              0.00            132.71 xxxx
+    QUAD4      128509        65.83             55.94            137.10              0.00              0.99 xxxx       374.94 xxxx
+    QUAD4      128530        33.81             22.28 xxxx       129.30              0.00              0.99 xxxx       436.39 xxxx
+    QUAD4      128554        88.91             54.42            158.74 xxxx         0.00              1.00 xxxx       491.89 xxxx
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =    128999
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =    129007
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =    129145
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =    129153
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =    129293
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+ *** USER FATAL MESSAGE 4297 (EQD4S)
+     QUAD4 ELEMENT WITH ID =    129301
+     HAS AN INTERIOR ANGLE POSSIBLY GREATER THAN OR EQUAL 180 DEGREES.
+     User information:
+     This may be caused by improper specification of geometry and/or
+     connectivity. Make sure that the CQUAD4 connectivity goes
+     completely around the element clockwise or counter-clockwise.
+    QUAD4      568380        60.82             48.31            139.05              0.06 xxxx         0.43              1.63     
+    QUAD4      568383        63.65             47.90            134.81              0.05 xxxx         0.37              1.77     
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    14
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4      568410        62.67             48.33            136.78              0.05 xxxx         0.41              1.79     
+    QUAD4      568415        61.57             47.85            136.09              0.05 xxxx         0.38              1.74     
+    QUAD4      568851        59.92             47.66            139.88              0.06 xxxx         0.44              1.62     
+    QUAD4      568873        60.74             47.96            139.20              0.06 xxxx         0.43              1.65     
+    QUAD4      569296        61.80             48.31            135.56              0.05 xxxx         0.38              1.70     
+    QUAD4      569315        64.15             49.72            133.50              0.05 xxxx         0.36              1.73     
+    QUAD4      569751        64.37             48.82            134.29              0.05 xxxx         0.37              1.76     
+    QUAD4      569754        59.94             47.84            139.05              0.06 xxxx         0.42              1.61     
+    QUAD4      570377        68.35             54.26            129.43              0.05 xxxx         0.32              1.64     
+    QUAD4      570932        68.42             54.32            129.39              0.05 xxxx         0.32              1.64     
+    QUAD4      571501        68.42             54.32            129.39              0.05 xxxx         0.32              1.64     
+    QUAD4      571984        68.35             54.26            129.44              0.05 xxxx         0.32              1.64     
+    QUAD4      599414        64.97             56.47            119.87              0.05 xxxx         0.20              1.60     
+    QUAD4      609252        88.82             84.78             90.58              0.05 xxxx         0.05              1.18     
+    QUAD4      609298        85.49             80.58             99.19              0.05 xxxx         0.10              1.17     
+    QUAD4      609299        87.57             81.00             96.22              0.06 xxxx         0.08              1.27     
+    QUAD4      609301        78.47             69.37             98.52              0.07 xxxx         0.15              1.25     
+    QUAD4      609302        86.14             84.86             92.67              0.05 xxxx         0.01              1.08     
+    QUAD4      609304        87.49             85.23             92.73              0.05 xxxx         0.02              1.18     
+    QUAD4      609308        80.54             70.13             97.63              0.05 xxxx         0.19              1.28     
+    QUAD4      609309        80.60             77.27            102.10              0.06 xxxx         0.08              1.12     
+    QUAD4      609310        76.77             72.85            101.69              0.07 xxxx         0.05              1.12     
+    QUAD4      609312        77.50             66.04            100.82              0.06 xxxx         0.22              1.46     
+    QUAD4      609313        80.80             75.91            101.30              0.05 xxxx         0.06              1.29     
+    QUAD4      609314        82.74             81.42             96.07              0.05 xxxx         0.01              1.18     
+    QUAD4      609318        71.71             68.50            117.37              0.05 xxxx         0.21              1.54     
+    QUAD4      609321        69.22             65.26            120.17              0.06 xxxx         0.23              1.44     
+ *** USER INFORMATION MESSAGE 7555 (GMTSTS)
+     FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.
+     A MAXIMUM OF        100 SKEW ANGLE (SA)      TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 MAX INT. ANGLE (IA)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    15
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MAX INT. ANGLE 
+    TRIA3        6630         4.45 xxxx        90.00     
+    TRIA3        8397         0.00 xxxx       112.95     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =      8411.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =      8411.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3        9731         0.00 xxxx        98.23     
+    TRIA3        9932         0.00 xxxx       160.07 xxxx
+    TRIA3       10342         0.40 xxxx        91.25     
+    TRIA3       11312         1.84 xxxx        90.01     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     11606.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     11606.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     11702.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     11702.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     11886.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     11886.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       12631         0.00 xxxx       119.94     
+    TRIA3       12632         0.01 xxxx       119.87     
+    TRIA3       12651         0.03 xxxx       144.27     
+    TRIA3       12997         0.00 xxxx        91.65     
+    TRIA3       14265         1.72 xxxx        89.56     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     14503.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     14503.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     14613.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     14613.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       14659         0.00 xxxx        91.64     
+    TRIA3       14976         0.03 xxxx        90.00     
+    TRIA3       14977         1.76 xxxx        90.11     
+    TRIA3       16458         0.01 xxxx       115.01     
+    TRIA3       16497         0.01 xxxx       115.02     
+    TRIA3       17173         0.02 xxxx       104.26     
+    TRIA3       17350         0.00 xxxx       106.99     
+    TRIA3       17586         0.01 xxxx       169.41 xxxx
+    TRIA3       17631         0.02 xxxx        98.66     
+    TRIA3       17799         0.01 xxxx       109.58     
+    TRIA3       17879         0.00 xxxx        93.35     
+    TRIA3       20672         0.04 xxxx       103.73     
+    TRIA3       20729         0.02 xxxx       115.74     
+    TRIA3       20906         0.00 xxxx        90.47     
+    TRIA3       21703         0.03 xxxx       105.58     
+    TRIA3       21880         0.00 xxxx       107.00     
+    TRIA3       22171         0.02 xxxx       127.86     
+    TRIA3       22494         0.03 xxxx       107.09     
+    TRIA3       22722         0.02 xxxx        98.01     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     23611.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     23611.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       26419         0.39 xxxx        90.00     
+    TRIA3       29248         7.66 xxxx       155.01     
+    TRIA3       29249         0.03 xxxx        92.86     
+    TRIA3       29369         0.04 xxxx        93.20     
+    TRIA3       29428         1.69 xxxx       174.18 xxxx
+    TRIA3       29430         2.25 xxxx       173.37 xxxx
+    TRIA3       29509         1.26 xxxx       175.62 xxxx
+    TRIA3       29511         7.73 xxxx       141.01     
+    TRIA3       29512         0.33 xxxx       178.91 xxxx
+    TRIA3       29513         7.68 xxxx        87.36     
+    TRIA3       30611         0.01 xxxx       119.89     
+    TRIA3       30903         8.72 xxxx       136.56     
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    16
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MAX INT. ANGLE 
+    TRIA3       31277         6.16 xxxx       148.00     
+    TRIA3       31279         2.95 xxxx       158.86     
+    TRIA3       31567         6.16 xxxx       148.00     
+    TRIA3       31569         2.95 xxxx       158.86     
+    TRIA3       31767         6.30 xxxx       131.92     
+    TRIA3       32076         6.30 xxxx       131.92     
+    TRIA3       33007         0.00 xxxx       171.32 xxxx
+    TRIA3       35508         7.39 xxxx        90.00     
+    TRIA3       35636         7.39 xxxx        90.00     
+    TRIA3       35714         0.03 xxxx        90.00     
+    TRIA3       35720         8.40 xxxx       110.17     
+    TRIA3       35804         0.03 xxxx        90.00     
+    TRIA3       35893         0.03 xxxx        90.00     
+    TRIA3       36260         0.00 xxxx       139.60     
+    TRIA3       36885         0.00 xxxx       139.60     
+    TRIA3       36956         0.00 xxxx       139.60     
+    TRIA3       37027         0.00 xxxx       139.60     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37151.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37151.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37352.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37352.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37440.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37440.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37529.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37529.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37663.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37663.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37929.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     37929.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     38452.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     38452.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     38524.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     38524.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       41118         9.67 xxxx       145.48     
+    TRIA3       41437         0.01 xxxx       142.44     
+    TRIA3       42380         0.14 xxxx       127.20     
+    TRIA3       42398         0.14 xxxx       127.20     
+    TRIA3       42416         0.14 xxxx       127.20     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     42486.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     42486.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     42916.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     42916.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       42966         0.01 xxxx       142.44     
+    TRIA3       43101         0.00 xxxx       139.60     
+    TRIA3       43580         0.01 xxxx       142.44     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     43587.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     43587.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       43862         0.00 xxxx       139.60     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     43958.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     43958.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       44004         0.00 xxxx       139.60     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     44100.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     44100.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       44146         0.00 xxxx       139.60     
+    TRIA3       44375         3.63 xxxx       161.66 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     47902.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     47902.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48253.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48253.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48334.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48334.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48338.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48338.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48494.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48494.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48581.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48581.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48585.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     48585.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       48953         0.03 xxxx        90.00     
+    TRIA3       49042         0.03 xxxx        90.00     
+    TRIA3       49131         0.03 xxxx        90.00     
+    TRIA3       49238         0.03 xxxx        90.00     
+    TRIA3       49347         0.03 xxxx        90.00     
+    TRIA3       49456         0.03 xxxx        90.00     
+    TRIA3       49565         0.03 xxxx        90.00     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     49825.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     49825.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     50099.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     50099.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       50358         0.03 xxxx        90.00     
+    TRIA3       52534         0.00 xxxx       178.35 xxxx
+    TRIA3       52600         0.00 xxxx       178.35 xxxx
+    TRIA3       53262         0.00 xxxx        90.00     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     54204.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     54204.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       57986         0.06 xxxx        90.00     
+    TRIA3       58098         0.37 xxxx       177.51 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     58494.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     58494.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    17
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MAX INT. ANGLE 
+    TRIA3       58814         0.06 xxxx        90.00     
+    TRIA3       59361         1.86 xxxx       175.90 xxxx
+    TRIA3       60332         0.28 xxxx       167.59 xxxx
+    TRIA3       60928         5.67 xxxx       145.66     
+    TRIA3       61025         2.77 xxxx       164.82 xxxx
+    TRIA3       61027         2.02 xxxx       152.88     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     61185.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     61185.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       63641         4.21 xxxx       155.86     
+    TRIA3       63735         4.22 xxxx       155.84     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     63836.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     63836.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       63854         3.87 xxxx       168.29 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     63954.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     63954.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       63973         2.00 xxxx       174.06 xxxx
+    TRIA3       64705         3.59 xxxx       130.00     
+    TRIA3       65277         1.80 xxxx        93.25     
+    TRIA3       65739         0.00 xxxx       143.92     
+    TRIA3       66697         0.04 xxxx       134.00     
+    TRIA3       66704         5.07 xxxx       169.17 xxxx
+    TRIA3       66706         7.35 xxxx       138.07     
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     66772.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     66772.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       66780         0.05 xxxx       179.74 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     66781.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     66781.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       66789         0.59 xxxx       176.76 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     67594.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     67594.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     67598.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     67598.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     67599.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     67599.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       71823         1.04 xxxx       177.77 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     74181.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     74181.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     74261.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     74261.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     74308.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     74308.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     74355.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     74355.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     82603.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     82603.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     83392.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     83392.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     90774.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     90774.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     91817.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     91817.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     93120.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     93120.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94210.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94210.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94586.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94586.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94632.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94632.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94678.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94678.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94724.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =     94724.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3       95607         0.18 xxxx       164.17 xxxx
+    TRIA3       96915         0.00 xxxx       177.45 xxxx
+    TRIA3       97495         0.08 xxxx       163.86 xxxx
+    TRIA3       98583         2.55 xxxx       174.76 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    100708.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    100708.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    101922.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    101922.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    101925.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    101925.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    105168.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    105168.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    108703.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    108703.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    108706.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    108706.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    108976.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    108976.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      113193         2.07 xxxx       174.79 xxxx
+    TRIA3      116564         0.02 xxxx       178.61 xxxx
+    TRIA3      116619         3.36 xxxx       169.41 xxxx
+    TRIA3      120347         1.34 xxxx       175.43 xxxx
+    TRIA3      126189         0.00 xxxx       160.96 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    127139.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    127139.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      129755         0.21 xxxx       177.50 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    134262.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    134262.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    134374.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    134374.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      134855         2.59 xxxx       174.30 xxxx
+    TRIA3      134857         5.66 xxxx       162.58 xxxx
+    TRIA3      135214         3.72 xxxx       172.49 xxxx
+    TRIA3      136627         5.56 xxxx       163.79 xxxx
+    TRIA3      156926         6.83 xxxx       160.05 xxxx
+    TRIA3      158454         8.98 xxxx       160.79 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    164895.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    164895.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    179552.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    179552.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    181285.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    181285.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    181436.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    181436.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    182805.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    182805.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    183130.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    183130.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    183559.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    183559.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    187533.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    187533.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    187848.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    187848.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    188163.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    188163.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    188207.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    188207.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    188532.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    188532.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    188857.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    188857.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    230659.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    230659.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    230810.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    230810.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    232609.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    232609.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    232943.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    232943.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      234112         0.94 xxxx       176.71 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    266353.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    266353.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    283161.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    283161.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    283513.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    283513.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      283582         2.63 xxxx       172.45 xxxx
+    TRIA3      287463         2.75 xxxx       172.55 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    288135.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    288135.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    290198.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    290198.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    290983.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    290983.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      291256         4.48 xxxx       161.74 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    291336.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    291336.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    291444.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    291444.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    291735.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    291735.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      292052         2.06 xxxx       174.75 xxxx
+    TRIA3      292633         0.00 xxxx       178.48 xxxx
+    TRIA3      292702         0.00 xxxx       178.33 xxxx
+    TRIA3      292887         0.00 xxxx       177.86 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    341500.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    341500.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      361816         7.42 xxxx       160.63 xxxx
+    TRIA3      367917         7.40 xxxx       160.68 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    371138.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    371138.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    377671.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    377671.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    381262.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    381262.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    381881.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    381881.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    382045.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    382045.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    382212.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    382212.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      410660         6.09 xxxx       161.85 xxxx
+    TRIA3      463491         1.40 xxxx       171.50 xxxx
+    TRIA3      463502         3.02 xxxx       161.01 xxxx
+    TRIA3      463524         9.14 xxxx       160.16 xxxx
+    TRIA3      465873         5.19 xxxx       169.63 xxxx
+    TRIA3      465948         3.07 xxxx       171.66 xxxx
+    TRIA3      465957         3.66 xxxx       163.38 xxxx
+    TRIA3      465958         2.96 xxxx       169.36 xxxx
+    TRIA3      465972         3.34 xxxx       170.72 xxxx
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    18
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MAX INT. ANGLE 
+    TRIA3      465974         2.41 xxxx       164.53 xxxx
+    TRIA3      465975         3.56 xxxx       172.01 xxxx
+    TRIA3      474688         0.17 xxxx       177.24 xxxx
+    TRIA3      474689         0.16 xxxx       176.88 xxxx
+    TRIA3      474690         0.17 xxxx       176.64 xxxx
+    TRIA3      474691         0.16 xxxx       176.40 xxxx
+    TRIA3      474692         0.16 xxxx       176.13 xxxx
+    TRIA3      474693         0.16 xxxx       175.76 xxxx
+    TRIA3      474694         0.16 xxxx       175.34 xxxx
+    TRIA3      474695         0.16 xxxx       174.81 xxxx
+    TRIA3      474696         0.16 xxxx       174.13 xxxx
+    TRIA3      474697         0.16 xxxx       173.26 xxxx
+    TRIA3      474698         0.16 xxxx       172.09 xxxx
+    TRIA3      474699         0.16 xxxx       170.42 xxxx
+    TRIA3      474700         0.16 xxxx       167.71 xxxx
+    TRIA3      474701         0.16 xxxx       163.01 xxxx
+    TRIA3      475638         0.16 xxxx       177.08 xxxx
+    TRIA3      475639         0.16 xxxx       177.08 xxxx
+    TRIA3      475640         0.16 xxxx       176.88 xxxx
+    TRIA3      475641         0.16 xxxx       176.64 xxxx
+    TRIA3      475642         0.16 xxxx       176.40 xxxx
+    TRIA3      475643         0.16 xxxx       176.13 xxxx
+    TRIA3      475644         0.16 xxxx       175.76 xxxx
+    TRIA3      475645         0.16 xxxx       175.34 xxxx
+    TRIA3      475646         0.16 xxxx       174.81 xxxx
+    TRIA3      475647         0.16 xxxx       174.14 xxxx
+    TRIA3      475648         0.16 xxxx       173.26 xxxx
+    TRIA3      475649         0.16 xxxx       172.09 xxxx
+    TRIA3      475650         0.16 xxxx       170.42 xxxx
+    TRIA3      475651         0.16 xxxx       167.71 xxxx
+    TRIA3      475652         0.16 xxxx       163.01 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    476390.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    476390.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      476816         4.80 xxxx       160.19 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    477833.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    477833.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    478283.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    478283.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    478845.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    478845.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    479198.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    479198.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    479852.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    479852.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    480345.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    480345.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    480898.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    480898.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    485777.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    485777.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    496739.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    496739.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+    TRIA3      497107         2.49 xxxx       167.38 xxxx
+    TRIA3      497321         9.59 xxxx       160.17 xxxx
+    TRIA3      497322         3.34 xxxx       170.79 xxxx
+    TRIA3      513639         2.33 xxxx       162.57 xxxx
+    TRIA3      513641         3.44 xxxx       167.54 xxxx
+    TRIA3      513642         2.39 xxxx       168.67 xxxx
+    TRIA3      513643         5.06 xxxx       160.07 xxxx
+    TRIA3      513644         2.19 xxxx       162.11 xxxx
+    TRIA3      513645         2.14 xxxx       162.57 xxxx
+    TRIA3      513646         2.15 xxxx       162.03 xxxx
+    TRIA3      513647         2.09 xxxx       162.61 xxxx
+    TRIA3      513648         2.10 xxxx       162.04 xxxx
+    TRIA3      513649         2.05 xxxx       162.55 xxxx
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    533725.  SUBROUTINE REASON IS NUMBER   1.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    533725.  SUBROUTINE REASON IS NUMBER   1.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    536719.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    536719.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    611297.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    611297.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    613989.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    613989.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    614375.  SUBROUTINE REASON IS NUMBER   2.
+ *** USER FATAL MESSAGE 4558 (ETR3S)
+     INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
+     SPECIFIED FOR ELEMENT WITH ID =    614375.  SUBROUTINE REASON IS NUMBER   2.
+     INAPPROPRIATE -TRIAR- GEOMETRY.
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    19
+                                                                                                                                    
+0                                                                                                                                   
+
+
+                            E L E M E N T   G E O M E T R Y   T E S T   R E S U L T S   S U M M A R Y
+                                        TOTAL NUMBER OF TIMES TOLERANCES WERE EXCEEDED
+ ELEMENT     SKEW    ASPECT/       MINIMUM       MAXIMUM    SURFACE/FACE  THICKNESS/     EDGE POINT    EDGE POINT       JACOBIAN
+ TYPE        ANGLE  TAPER RATIO  INTER. ANGLE  INTER. ANGLE  WARP FACTOR  OFFSET RATIO  LENGTH RATIO  INCLUDED ANGLE  DETERMINANT
+ BEAM          N/A        N/A           N/A           N/A           N/A             0           N/A           N/A           N/A     
+ QUAD4         242       4435           593           921            35           N/A           N/A           N/A           N/A     
+ TRIA3        1657        N/A           N/A           595           N/A           N/A           N/A           N/A           N/A     
+
+         N/A IN THE ABOVE TABLE INDICATES TESTS THAT ARE NOT APPLICABLE TO THE ELEMENT TYPE AND WERE NOT PERFORMED.
+         FOR ALL ELEMENTS WHERE GEOMETRY TEST RESULTS HAVE EXCEEDED TOLERANCES,
+
+         QUAD4    ELEMENT ID   232593 PRODUCED SMALLEST SKEW ANGLE       OF       1.54 (TOLERANCE =       30.00).
+         QUAD4    ELEMENT ID    56827 PRODUCED LARGEST  TAPER RATIO      OF       1.00 (TOLERANCE =        0.50).
+         QUAD4    ELEMENT ID   232593 PRODUCED SMALLEST INTERIOR ANGLE   OF       1.11 (TOLERANCE =       30.00).
+         QUAD4    ELEMENT ID   232593 PRODUCED LARGEST  INTERIOR ANGLE   OF     178.89 (TOLERANCE =      150.00).
+         QUAD4    ELEMENT ID    28819 PRODUCED LARGEST  WARP FACTOR      OF       0.07 (TOLERANCE =        0.05).
+         QUAD4    ELEMENT ID   275904 PRODUCED LARGEST  ASPECT RATIO     OF     862.09 (TOLERANCE =      100.00).
+         TRIA3    ELEMENT ID   292702 PRODUCED SMALLEST SKEW ANGLE       OF       0.00 (TOLERANCE =       10.00).
+         TRIA3    ELEMENT ID    66780 PRODUCED LARGEST  INTERIOR ANGLE   OF     179.74 (TOLERANCE =      160.00).
+ ^^^ USER   FATAL   MESSAGE 9031 (ERRPH1)    
+ ^^^ NOGO ENCOUNTERED IN SUBDMAP    SEMG     
+ *** USER INFORMATION MESSAGE 4110 (OUTPBN2)
+                                 END-OF-DATA SIMULATION ON FORTRAN UNIT 12
+                                 (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
+                                       (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
+                                       (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    20
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     28
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+1                                        * * * END OF JOB * * *
+ 
+ 
