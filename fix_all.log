@@ -1,0 +1,23 @@
+=== fix_all_v1 ===
+RUN_MODE = 0
+actions  = C:\Users\nikhil.mohan\Desktop\Analysis testing\audit\FIX_ACTIONS_FULL.csv
+
+actions loaded
+  DELETE  : 0
+  TRIA    : 0
+  REORDER : 0
+
+--- Stage 1: delete ---
+  nothing to delete
+
+--- Stage 2: convert collapsed quads to CTRIA3 ---
+  nothing to convert
+
+--- Stage 3: reorder crossed quads ---
+  nothing to reorder
+
+--- next steps ---
+  1. Save a backup of the model
+  2. BACKUP_DONE = 1, RUN_MODE = 1
+  3. Inspect the one converted element
+  4. RUN_MODE = 2
