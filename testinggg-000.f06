@@ -88,7 +88,7 @@
  for global, or multi-user control, and in a local file for local control.
  Individual jobs can be controlled by setting news to yes or no on the command
  line.
-1                                                                         SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     1
+1                                                                         SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     1
                                                                                                                                     
 0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
 0                                                                                                                                   
@@ -100,7 +100,7 @@
      NASTRAN REAL=8533835776 $(MEMORY LIMIT FOR MPI AND OTHER SPECIALIZED MODULES)   
      INIT MASTER(S)                                                                  
      NASTRAN SYSTEM(442)=-1,SYSTEM(319)=1                                            
-1                                                                         SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     2
+1                                                                         SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     2
                                                                                                                                     
 0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
 0                                                                                                                                   
@@ -109,7 +109,7 @@
      ID TESTINGGG,FEMAP                                                                      
      SOL SESTATIC                                                                            
      CEND                                                                                    
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     3
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     3
                                                                                                                                     
 0                                                                                                                                   
 0                                        C A S E    C O N T R O L    E C H O                                                        
@@ -151,7 +151,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       27 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =       53 WORDS.)
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     4
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     4
                                                                                                                                     
 0                                                                                                                                   
 0                                                                                                                                   
@@ -209,7 +209,7 @@
      A MAXIMUM OF        100 WARPING FACTOR (WF)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
      A MAXIMUM OF        100 TAPER RATIO (TR)     TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
      A MAXIMUM OF        100 ASPECT RATIO (AR)    TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     5
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     5
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -338,7 +338,7 @@
      This may be caused by improper specification of geometry and/or
      connectivity. Make sure that the CQUAD4 connectivity goes
      completely around the element clockwise or counter-clockwise.
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     6
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     6
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -474,7 +474,7 @@
      connectivity. Make sure that the CQUAD4 connectivity goes
      completely around the element clockwise or counter-clockwise.
     QUAD4       16458        87.39             43.70            154.97 xxxx         0.00              1.00 xxxx      5677.35 xxxx
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     7
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -592,7 +592,7 @@
     QUAD4       28819        84.00             63.10            121.20              0.07 xxxx         0.40              1.77     
     QUAD4       28833        72.97             57.24            115.57              0.06 xxxx         0.31              1.85     
     QUAD4       29249        42.42             26.16 xxxx       112.31              0.00              1.00 xxxx      1986.18 xxxx
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     8
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     8
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -660,7 +660,7 @@
     QUAD4       31344        32.61             20.78 xxxx       150.43 xxxx         0.00              0.49              5.07     
     QUAD4       31346        50.65             20.62 xxxx       163.83 xxxx         0.00              0.54 xxxx         4.34     
     QUAD4       31564        64.32             37.20            154.33 xxxx         0.00              0.58 xxxx         2.41     
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     9
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE     9
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -708,7 +708,7 @@
     QUAD4       31760        70.19             26.08 xxxx       155.78 xxxx         0.00              0.64 xxxx         3.33     
     QUAD4       31764        32.80             19.85 xxxx       163.18 xxxx         0.00              0.45              3.94     
     QUAD4       31765        36.87             23.90 xxxx       160.74 xxxx         0.00              0.45              3.09     
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    10
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    10
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -917,7 +917,7 @@
      completely around the element clockwise or counter-clockwise.
     QUAD4       42137        85.83             51.69            161.23 xxxx         0.00              1.00 xxxx       171.00 xxxx
     QUAD4       42147        90.00             90.00             90.00              0.00              0.00            160.82 xxxx
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    11
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    11
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -1479,7 +1479,7 @@
      connectivity. Make sure that the CQUAD4 connectivity goes
      completely around the element clockwise or counter-clockwise.
     QUAD4       60342        21.37 xxxx        12.79 xxxx       127.25              0.00              0.98 xxxx       156.74 xxxx
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    12
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    12
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -1932,7 +1932,7 @@
      This may be caused by improper specification of geometry and/or
      connectivity. Make sure that the CQUAD4 connectivity goes
      completely around the element clockwise or counter-clockwise.
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    13
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    13
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -5797,7 +5797,7 @@
     QUAD4      609313        80.80             75.91            101.30              0.05 xxxx         0.06              1.29     
     QUAD4      609314        82.74             81.42             96.07              0.05 xxxx         0.01              1.18     
     QUAD4      609318        71.71             68.50            117.37              0.05 xxxx         0.21              1.54     
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    14
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    14
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
@@ -5883,7 +5883,7 @@
      FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.
      A MAXIMUM OF        100 SKEW ANGLE (SA)      TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
      A MAXIMUM OF        100 MAX INT. ANGLE (IA)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    15
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    15
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
@@ -5951,7 +5951,7 @@
     TRIA3       61025         2.77 xxxx       164.82 xxxx
     TRIA3       61164         0.00 xxxx        97.62     
     TRIA3       63601         0.02 xxxx        93.34     
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    16
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    16
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
@@ -6096,7 +6096,7 @@
     TRIA3      129025         0.47 xxxx       128.44     
     TRIA3      129048         0.22 xxxx       148.65     
     TRIA3      129087         0.13 xxxx        90.05     
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    17
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    17
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
@@ -6237,7 +6237,7 @@
      SPECIFIED FOR ELEMENT WITH ID =    257917.  SUBROUTINE REASON IS NUMBER   2.
      INAPPROPRIATE -TRIAR- GEOMETRY.
     TRIA3      283582         2.63 xxxx       172.45 xxxx
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    18
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    18
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
@@ -6260,7 +6260,7 @@
     TRIA3      463524         9.14 xxxx       160.16 xxxx
     TRIA3      465873         5.19 xxxx       169.63 xxxx
     TRIA3      465948         3.07 xxxx       171.66 xxxx
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    19
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    19
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
@@ -6295,7 +6295,7 @@
     TRIA3      475646         0.16 xxxx       174.81 xxxx
     TRIA3      475647         0.16 xxxx       174.14 xxxx
     TRIA3      475648         0.16 xxxx       173.26 xxxx
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    20
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    20
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (xxxx = LIMIT VIOLATED)
@@ -6646,7 +6646,7 @@
      INAPPROPRIATE GEOMETRY OR INCORRECT MATERIAL DATA
      SPECIFIED FOR ELEMENT WITH ID =    611765.  SUBROUTINE REASON IS NUMBER   1.
      INAPPROPRIATE -TRIAR- GEOMETRY.
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    21
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    21
                                                                                                                                     
 0                                                                                                                                   
 
@@ -6677,7 +6677,7 @@
                                  (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
                                        (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
                                        (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
-1    TEST                                                                 SEPTEMBER  10, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    22
+1    TEST                                                                 SEPTEMBER  15, 2026  SIMCENTER NASTRAN  2/ 8/22   PAGE    22
                                                                                                                                     
 0                                                                                                                                   
  * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     28
