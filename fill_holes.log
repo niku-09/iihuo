@@ -1,0 +1,19 @@
+=== fill_holes_v1 ===
+RUN_MODE = 1
+
+patches loaded : 317
+  triangular   : 216
+  quad         : 101
+
+id range check: 700000 to 700316
+  range is free
+
+--- creating patches ---
+  [RUN_MODE 1] created element 700000 only.
+  Inspect it in the viewport before RUN_MODE 2.
+  created : 1
+  failed  : 0
+
+  Next: re-solve. The patches carry the same property as
+  the elements around each hole, so local stress there
+  should now be meaningful rather than a free-edge artefact.
